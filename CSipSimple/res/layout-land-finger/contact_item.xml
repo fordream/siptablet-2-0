@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    -->
+
+    <LinearLayout
+        android:id="@+id/contact_item_x_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/notification_item_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_22dp"
+            android:layout_marginTop="@dimen/dimen_3dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/contact_item_control"
+                android:orientation="horizontal" >
+
+                <com.shopivr.component.view.custom.font.BoldTextView
+                    android:id="@+id/contact_item_text_name"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_3dp"
+                    android:paddingRight="@dimen/dimen_3dp"
+                    android:singleLine="true"
+                    android:text="GINIE業務窓口  "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_7dp"
+                    android:textStyle="bold" />
+
+                <com.shopivr.component.view.custom.font.BoldTextView
+                    android:id="@+id/contact_item_text_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_3dp"
+                    android:paddingRight="@dimen/dimen_3dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_7dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_item_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/contact_item_call_1"
+                    android:layout_width="@dimen/dimen_21dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:background="@drawable/a_xml_btn_transfer"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/t_3_left_txt" />
+
+                <ImageView
+                    android:id="@+id/contact_item_call_2"
+                    android:layout_width="@dimen/dimen_21dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:background="@drawable/a_xml_btn_transfer"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/t_3_right_txt" />
+
+                <ImageView
+                    android:id="@+id/contact_item_call"
+                    android:layout_width="@dimen/dimen_9dp"
+                    android:layout_height="@dimen/dimen_9dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:background="@drawable/contact_call"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/contact_item_infor"
+                    android:layout_width="@dimen/dimen_9dp"
+                    android:layout_height="@dimen/dimen_9dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:background="@drawable/contact_infor" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+    </LinearLayout>
+
+</LinearLayout>

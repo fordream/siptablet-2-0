@@ -1,0 +1,427 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ta_main_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10dp"
+            android:background="#5d5e62" >
+
+            <LinearLayout
+                android:id="@+id/main_menu_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_7dp"
+                    android:layout_height="@dimen/dimen_7dp"
+                    android:layout_marginLeft="@dimen/dimen_3dp"
+                    android:background="@drawable/main_menu_left" />
+
+                <com.shopivr.component.view.custom.font.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_0dp"
+                    android:text="メニュー"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_6dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_3dp"
+                    android:layout_height="@dimen/dimen_3dp"
+                    android:layout_marginLeft="@dimen/dimen_3dp"
+                    android:background="@drawable/main_menu_left_round" />
+            </LinearLayout>
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/text_main_title_left"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+
+                <LinearLayout
+                    android:id="@+id/ta_login_main_menu"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:src="@drawable/main_menu_right_notification" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ta_login_user_infor"
+                    android:layout_width="@dimen/dimen_50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_3dp"
+                        android:layout_height="@dimen/dimen_3dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_3dp"
+                        android:background="@drawable/main_menu_left_round" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.shopivr.component.view.custom.font.RegularTextView
+                            android:id="@+id/ta_main_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="店舗名:"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/dimen_3dp"
+                            android:textStyle="bold" />
+
+                        <com.shopivr.component.view.custom.font.RegularTextView
+                            android:id="@+id/ta_main_user_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="内線番号：50001"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/dimen_3dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_7dp"
+                        android:layout_height="@dimen/dimen_7dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/main_menu_right_persion" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ta_main_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#06f6c0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:background="@drawable/ta_main_call_bg" >
+
+            <LinearLayout
+                android:id="@+id/ll01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_1dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:id="@+id/ta_main_status"
+                    android:layout_width="@dimen/dimen_46dp"
+                    android:layout_height="@dimen/dimen_12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:background="@drawable/ta_main_status"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_2dp"
+                    android:paddingRight="@dimen/dimen_2dp"
+                    android:text="-"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_7dp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/ta_main_on_of"
+                    android:layout_width="@dimen/dimen_46dp"
+                    android:layout_height="@dimen/dimen_12dp"
+                    android:background="@drawable/ta_main_check"
+                    android:button="@drawable/tranfer"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center" >
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_1"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:background="@drawable/_01"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_2"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginLeft="@dimen/dimen_2dp"
+                    android:layout_marginRight="@dimen/dimen_2dp"
+                    android:background="@drawable/_02"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_3"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:background="@drawable/_03"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_4"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginLeft="@dimen/dimen_2dp"
+                    android:layout_marginRight="@dimen/dimen_2dp"
+                    android:background="@drawable/_04"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_5"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:background="@drawable/_05"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+
+                <com.shopivr.component.view.FeatureButton
+                    android:id="@+id/ta_main_btn_6"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginLeft="@dimen/dimen_2dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:background="@drawable/_06"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a_xml_menu_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dimen_2dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:layout_toLeftOf="@+id/ll02"
+                android:layout_toRightOf="@+id/ll01"
+                android:background="@drawable/ta_main_call_infor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8dp" >
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_6dp"
+                        android:layout_height="@dimen/dimen_6dp"
+                        android:background="@drawable/ta_main_contact" />
+
+                    <com.shopivr.component.view.custom.font.RegularTextView
+                        android:id="@+id/txt_main_number_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="---"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/dimen_6dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_6dp"
+                        android:layout_height="@dimen/dimen_6dp"
+                        android:background="@drawable/ta_main_time" />
+
+                    <com.shopivr.component.view.custom.font.RegularTextView
+                        android:id="@+id/txt_main_number_call_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="---"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/dimen_6dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.shopivr.component.view.TAWebView
+                android:id="@+id/ta_main_web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!-- android:alpha="0.8" -->
+
+            <com.shopivr.component.view.CallingViewStatus
+                android:id="@+id/callingviewstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/xml_calling_mx"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp" >
+
+                <com.shopivr.component.view.custom.font.BoldTextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dimen_3dp"
+                    android:text="@string/call_state_incoming"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_10dp"
+                    android:textStyle="bold" />
+            </com.shopivr.component.view.CallingViewStatus>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.shopivr.component.view.Menu5View
+        android:id="@+id/menu5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.shopivr.component.view.Menu5View>
+
+    <com.shopivr.component.view.Menu4View
+        android:id="@+id/menu4view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!-- android:visibility="gone" -->
+
+    <com.shopivr.component.view.Menu3View
+        android:id="@+id/menu3view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.MenuLeftView
+        android:id="@+id/menuleftview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.MenuUserView
+        android:id="@+id/menuusertview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.MenuNotificationView
+        android:id="@+id/menunotificationtview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!--  -->
+
+    <com.shopivr.component.view.Menu2View
+        android:id="@+id/menu2view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.ContactView
+        android:id="@+id/contactview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.LoginView
+        android:id="@+id/loginview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.shopivr.component.view.DTMSView
+        android:id="@+id/dtmsview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/ta_main_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/loading_contact"
+            android:layout_width="@dimen/dimen_196dp"
+            android:layout_height="@dimen/dimen_124dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_45dp" >
+
+            <ProgressBar
+                android:layout_width="@dimen/dimen_10dp"
+                android:layout_height="@dimen/dimen_10dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="@dimen/dimen_10dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

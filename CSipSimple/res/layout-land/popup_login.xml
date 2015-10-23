@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22222222"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xml_sip_popup_logout_bg"
+        android:orientation="vertical" >
+
+        <com.shopivr.component.view.custom.font.BoldTextView
+            android:id="@+id/popup_loigin_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_6dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:gravity="center" >
+
+            <com.shopivr.component.view.custom.font.BoldButton
+                android:id="@+id/popup_loigin_no"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@drawable/xml_sip_btn_login"
+                android:text="NO"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_5dp"
+                android:textStyle="bold" />
+
+            <com.shopivr.component.view.custom.font.BoldButton
+                android:id="@+id/popup_loigin_yes"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:background="@drawable/xml_sip_btn_login"
+                android:text="YES"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

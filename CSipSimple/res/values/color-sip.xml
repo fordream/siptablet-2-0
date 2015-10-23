@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="inactive">#80d8f8</color>
+    <color name="active">#00aff0</color>
+    <color name="pressed">#0c93c5</color>
+    <color name="menupressed">#770c93c5</color>
+
+</resources>

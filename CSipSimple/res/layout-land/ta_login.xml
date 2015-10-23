@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10dp"
+            android:background="#5d5e62" >
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/text_title_login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" />
+
+            <com.shopivr.component.view.custom.font.BoldButton
+                android:id="@+id/vnc_login_btn_setting"
+                android:layout_width="@dimen/dimen_19dp"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_2dp"
+                android:background="@drawable/xml_sip_btn_login"
+                android:text="@string/text_login_setting"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_4dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="#f8edf3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp" >
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/text_title_user_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_4dp" />
+
+                <!-- android:hint="password" -->
+
+                <EditText
+                    android:id="@+id/vnc_login_edt_shopcode"
+                    style="@style/edt"
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="@dimen/dimen_13dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_6dp" />
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="@string/text_title_user"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_4dp" />
+                <!-- android:hint="user" -->
+
+                <EditText
+                    android:id="@+id/vnc_login_edt_user"
+                    style="@style/edt"
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="@dimen/dimen_13dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_6dp" >
+                </EditText>
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="@string/text_title_account_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_4dp" />
+
+                <!-- android:hint="account name" -->
+
+                <EditText
+                    android:id="@+id/vnc_login_edt_password"
+                    style="@style/edt"
+                    android:layout_width="@dimen/dimen_110dp"
+                    android:layout_height="@dimen/dimen_13dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_6dp" >
+                </EditText>
+
+                <com.shopivr.component.view.custom.font.BoldButton
+                    android:id="@+id/vnc_login_btn_login"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/xml_sip_btn_login"
+                    android:text="ログイン"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/text_main_title_left"
+                    android:textColor="#9a9a9a"
+                    android:textSize="@dimen/dimen_6dp" />
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:id="@+id/login_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/dimen_7dp"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:text="1.3.3"
+                    android:textColor="#9a9a9a"
+                    android:textSize="@dimen/dimen_4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/login_ta_dropbox"
+            android:layout_width="@dimen/dimen_105dp"
+            android:layout_height="@dimen/dimen_49dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_11dp"
+            android:background="@drawable/login_popup"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingRight="@dimen/dimen_2dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_13dp" >
+
+                <com.shopivr.component.view.custom.font.BoldTextView
+                    android:layout_width="@dimen/dimen_900dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dimen_2dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_toLeftOf="@+id/vnc_login_edt_server"
+                    android:text="@string/text_title_server"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_4dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/vnc_login_edt_server"
+                    style="@style/edt"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:background="@drawable/xml_sip_editext"
+                    android:hint="server"
+                    android:text="192.168.3.94" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp" >
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:layout_width="@dimen/dimen_45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/text_login_server_example"
+                    android:textSize="@dimen/dimen_5dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.shopivr.component.view.custom.font.BoldButton
+                android:id="@+id/login_btn_save_server"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:background="@drawable/xml_sip_btn_login"
+                android:text="@string/text_login_save_server"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_6dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_update_version"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_sip_btn_login_checkversion"
+            android:orientation="vertical" >
+
+            <com.shopivr.component.view.custom.font.RegularTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:text="@string/upate_check_new_version"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:layout_width="@dimen/dimen_10dp"
+                    android:layout_height="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

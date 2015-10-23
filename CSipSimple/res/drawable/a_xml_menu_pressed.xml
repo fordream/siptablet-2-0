@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="@color/menupressed" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/dimen_15dp"
+                android:bottomRightRadius="@dimen/dimen_15dp"
+                android:topLeftRadius="@dimen/dimen_15dp"
+                android:topRightRadius="@dimen/dimen_15dp" />
+        </shape>
+    </item>
+
+  
+
+</layer-list>

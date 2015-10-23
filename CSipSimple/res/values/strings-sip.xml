@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="debug" type="bool">true</item>
+
+    <string name="text_title_user">ユーザーID</string>
+    <string name="text_title_account_name">パスワード</string>
+    <string name="text_title_user_name">ショップコード</string>
+    <string name="text_title_server">接続先</string>
+    <string name="text_btn_login">ログイン</string>
+    <string name="text_title_login">利用開始</string>
+    <string name="text_login_setting">設定</string>
+    <string name="text_login_save_server">登録</string>
+    <string name="text_login_server_example">例) 192.168.2.5</string>
+    <string name="app_name">GTel</string>
+    <string name="setting">Setting</string>
+
+    <string-array name="menus">
+        <item>KeyPad</item>
+        <item>Call History</item>
+        <item>Address Book</item>
+        <item>Information</item>
+        <item>Favorite</item>
+        <item>InComming</item>
+        <item>Record</item>
+        <item>Setting</item>
+    </string-array>
+
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="starts_with">Starts with</string>
+    <string name="ends_with">Ends with</string>
+    <string name="contains">Contains</string>
+    <!-- vnc -->
+    <!-- <string name="all">All</string> -->
+    <string name="all">All</string>
+    <string name="has_exactly_n_digits">Has exactly N digits</string>
+    <string name="has_more_than_n_digits">Has more than N digits</string>
+    <string name="is_exactly">Is exactly</string>
+    <string name="custom_regexp">Custom RegExp</string>
+    <string name="prefix_by">Prefix by</string>
+    <string name="suffix_with">Suffix with</string>
+    <string name="replace_match_by">Replace match by</string>
+    <string name="replace_all_by">Replace all by</string>
+    <string name="empty_description"></string>
+    <string name="other_country_providers_text">Other country providers</string>
+    <string name="world_wide_providers_text">World wide providers</string>
+    <string name="generic_wizards_text">Generic wizards</string>
+    <string name="downloading_text">Downloading</string>
+    <string name="downloading">Downloading</string>
+    <string name="done">Done</string>
+
+    <bool name="use_dual_panes">false</bool>
+    <!-- In call String -->
+    <string name="bluetooth">BlueTooth</string>
+    <string name="speaker">Speaker</string>
+    <string name="call_state_calling">発信中...</string>
+    <string name="call_state_confirmed">通話中...</string>
+    <string name="call_state_connecting">Connecting…</string>
+    <string name="call_state_disconnected">終了</string>
+    <string name="call_state_early">Ringing…</string>
+    <string name="call_state_incoming">着信中...</string>
+    <string name="call_state_transfer_start">転送開始中...</string>
+    <string name="call_state_null">ERROR</string>
+    <!-- API String -->
+    <string name="permlab_useSip">Use sip</string>
+    <string name="permdesc_useSip">Place SIP calls, send SIP messages and control SIP communications</string>
+    <string name="permlab_configureSip">Use sip</string>
+    <string name="permdesc_configureSip">Place SIP calls, send SIP messages and control SIP communications</string>
+    <!-- status -->
+    <string name="acct_inactive">Inactive</string>
+    <string name="acct_unregistered">Not Registered</string>
+    <string name="acct_registering">Registering…</string>
+    <string name="acct_registered">Registered</string>
+    <string name="acct_regerror">Error while registering</string>
+    <string name="acct_regfailed">Register Failed - Check your Configuration</string>
+    <!--  -->
+
+    <string name="connection_not_valid">サーバに接続できませんでした。</string>
+    <string name="invalid_sip_uri">Sip uri is invalid for call</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_pstn">Use mobile</string>
+   <!--  <string name="ongoing_call">Call in Progress</string> -->
+    <string name="missed_call">Missed call</string>
+    <string name="favorites_tab_name_text">Favorites</string>
+    <string name="service_ticker_registered_text">SIP Registered</string>
+    <string name="ok">OK</string>
+    <string name="gadget_title">SIP Account switcher</string>
+    <string name="another_application_use_sip_port">Another application is currently using SIP port! Can\'t start !!!</string>
+    <string name="choose_phone">Choose phone</string>
+    <string name="no_phone_found">No phone found for this contact</string>
+    <string name="voice_mail">Voice mail</string>
+    <string name="type_sip_uri_or_autocomplete">Sip uri or autocomplete</string>
+    <string name="not_configured_multiple_calls">The application is not configured to allow multiple calls</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="cant_write_file">Error writing file</string>
+
+    <!-- Presence stuff -->
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="away">Away</string>
+    <string name="busy">Busy</string>
+    <string name="uri_nbr">Phone number</string>
+    <string name="uri_im">IM with custom SIP scheme</string>
+    <string name="uri_sip">Internet call</string>
+    <string name="text_main_title_left">GENIEテレフォニー</string>
+    <string name="txt_main_menu">Menu</string>
+
+    <!-- add new -->
+    <string name="error_message_login_name">ユーザーIDを入力してください。</string>
+    <string name="error_message_login_password">パスワードを入力してください。</string>
+    <string name="error_message_login_shopcode">ショップコードを入力してください。</string>
+    <string name="error_connect_server">サーバに接続できませんでした。</string>
+    <string name="error_update_status">Can not update status</string>
+    <!-- <string name="client_status_setting_on">受付中</string> -->
+    <string name="client_status_setting_on">-</string>
+    <!-- <string name="client_status_setting_off">着信不可</string> -->
+    <string name="client_status_setting_off">-</string>
+    <string name="status_tranfer">転送開始中...</string>
+    <!--  -->
+    <string name="menu_contact_1">各種業務窓口</string>
+    <string name="menu_contact_2">(内線)クルー</string>
+    <string name="menu_contact_3">(内線)グループ </string>
+    <string name="menu_contact_4">iPad電話帳</string>
+    <!--  -->
+    <string name="sip_user_number_format">%s</string> <!-- ユーザー名： -->
+    <string name="ta_main_user_name" formatted="false">%s%s</string> <!-- 店舗名: -->
+    <string name="menuusernumber" formatted="false">内戦番号  :  %s%s</string>
+
+    <!-- message update download apk -->
+    <string name="update_null">バージョン情報の取得に失敗しました。</string>
+    <string name="update_request_errorl">アップデート時に異常が発生しました。</string>
+    <string name="update_need">akamai.sbb-sys.info would like to install \"GINIEテレフォニー\"</string>
+    <string name="upate_check_new_version">最新情報確認中...</string>
+    <string name="install">install</string>
+    <string name="downloadingupdateversion">新しいバージョンをダウンロードしています。しばらくお待ちください。</string>
+    <string name="downloadapkerror">Apkファイルをダウンロードできません。</string>
+    <string name="apk_download">Apkファイルのダウンロード</string>
+    <string name="update_start_download_apk">Apkファイルをダウンロード開始する</string>
+    <string name="download_in_progress">ダウンロード中です。</string>
+    <string name="status_transfer_click">転送</string>
+    <string name="sort">あかさたなはまやらわ-ABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+
+    <string-array name="alphabel_1">
+        <item>あいうえお</item>
+        <item>かきくけこ</item>
+        <item>さしすせそ</item>
+        <item>たちつてと</item>
+        <item>なにぬねの</item>
+        <item>はひふへほ</item>
+        <item>まみむめも</item>
+        <item>やゆよ</item>
+        <item>らりるれろ</item>
+        <item>わを</item>
+    </string-array>
+    <string-array name="alphabel_2">
+        <item>アイウエオ</item>
+        <item>カキクケコ</item>
+        <item>サシスセソ</item>
+        <item>タチツテト</item>
+        <item>ナ二ヌネノ</item>
+        <item>ハヒフヘホ</item>
+        <item>マミムメモ</item>
+        <item>ヤユヨ</item>
+        <item>ラリルレロ</item>
+        <item>ワヲ</item>
+    </string-array>
+
+    <string name="call_state_transfer_early">転送発信中...</string>
+    <string name="call_state_transfer_confirmed">転送通話中...</string>
+    
+    <string name="dialog_title">「保留」操作が失敗しました。</string>
+    <string name="dialog_content">もう一度「保留」操作を実行してください。</string>
+
+</resources>

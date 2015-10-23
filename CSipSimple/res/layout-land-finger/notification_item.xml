@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/notification_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_6dp"
+                    android:layout_height="@dimen/dimen_6dp"
+                    android:src="@drawable/notification_clock" />
+
+                <TextView
+                    android:id="@+id/notification_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_3dp"
+                    android:paddingRight="@dimen/dimen_3dp"
+                    android:text="2015/01/30　09：３０"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/dimen_5dp" />
+
+                <TextView
+                    android:id="@+id/notification_item_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="未読"
+                    android:textColor="#c10808"
+                    android:textSize="@dimen/dimen_5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notification_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:paddingLeft="@dimen/dimen_3dp"
+                android:paddingRight="@dimen/dimen_3dp"
+                android:text="１２/1　２２：００〜２４：００システムメ ンテナンスの為、GINIEテレフォニー利用不可"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_6dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notification_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_3dp"
+        android:paddingRight="@dimen/dimen_3dp"
+        android:text="１２/1　２２：００〜２４：００システムメ ンテナンスの為、GINIEテレフォニー利用不可\n１２/1　２２：００〜２４：００システムメ ンテナンスの為、GINIEテレフォニー利用不可"
+        android:textColor="#17191e"
+        android:textSize="@dimen/dimen_5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939496" />
+
+</LinearLayout>

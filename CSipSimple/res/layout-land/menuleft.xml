@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menuleft_main"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_marginLeft="@dimen/dimen_3dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/menuleft_bg"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_2dp"
+        android:paddingRight="@dimen/dimen_2dp" >
+
+        <LinearLayout
+            android:id="@+id/menuleft_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_8dp"
+                android:layout_height="@dimen/dimen_8dp"
+                android:background="@drawable/menuleft_1" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:text="コールリスト"
+                android:textColor="#7d7d7d"
+                android:textSize="@dimen/dimen_5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/menuleft_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_8dp"
+                android:layout_height="@dimen/dimen_8dp"
+                android:background="@drawable/menuleft_2" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:text="履歴"
+                android:textColor="#7d7d7d"
+                android:textSize="@dimen/dimen_5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/menuleft_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_8dp"
+                android:layout_height="@dimen/dimen_8dp"
+                android:background="@drawable/menuleft_3" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:text="ヘルプ"
+                android:textColor="#7d7d7d"
+                android:textSize="@dimen/dimen_5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

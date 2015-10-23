@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu5_main"
+        android:layout_width="@dimen/dimen_98dp"
+        android:layout_height="@dimen/dimen_120dp"
+        android:layout_marginRight="@dimen/dimen_3dp"
+        android:layout_marginTop="@dimen/dimen_42dp"
+        android:background="@drawable/menu5_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_5dp" >
+
+        <LinearLayout
+            android:id="@+id/menu5_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_27dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="各種業務窓口"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_8dp"
+            android:textStyle="bold" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_13dp"
+                android:layout_height="@dimen/dimen_13dp"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_mu_1" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:text="各種業務窓口"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" >
+            </com.shopivr.component.view.custom.font.BoldTextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/menu5_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_27dp"
+            android:gravity="center"
+            android:text="(内線)クルー"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_8dp"
+            android:textStyle="bold" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_13dp"
+                android:layout_height="@dimen/dimen_13dp"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_mu_2" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:text="(内線)クルー"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" >
+            </com.shopivr.component.view.custom.font.BoldTextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/menu5_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_27dp"
+            android:gravity="center"
+            android:text="(内線)グループ "
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_8dp"
+            android:textStyle="bold" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_13dp"
+                android:layout_height="@dimen/dimen_13dp"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_mu_3" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:text="(内線)グループ "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" >
+            </com.shopivr.component.view.custom.font.BoldTextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:background="#e8e8e8" />
+
+        <LinearLayout
+            android:id="@+id/menu5_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_27dp"
+            android:gravity="center"
+            android:text="iPad電話帳"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_8dp"
+            android:textStyle="bold" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_13dp"
+                android:layout_height="@dimen/dimen_13dp"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_mu_4" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:text="iPad電話帳"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_8dp"
+                android:textStyle="bold" >
+            </com.shopivr.component.view.custom.font.BoldTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

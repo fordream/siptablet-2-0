@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_0dp"
+    android:paddingRight="@dimen/dimen_20dp" >
+
+    <RelativeLayout
+        android:id="@+id/contact_main"
+        android:layout_width="@dimen/dimen_196dp"
+        android:layout_height="@dimen/dimen_124dp"
+        android:layout_marginTop="@dimen/dimen_45dp"
+        android:background="@drawable/contact_bg" >
+
+        <RelativeLayout
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:visibility="gone" >
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:id="@+id/contact_detail_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_3dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:gravity="center"
+                android:text="よく使う連絡先"
+                android:textColor="#212222"
+                android:textSize="@dimen/dimen_7dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contact_list_edt"
+                android:layout_width="@dimen/dimen_176dp"
+                android:layout_height="@dimen/dimen_10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:background="@drawable/xml_sip_editext"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_0dp"
+                android:textSize="@dimen/dimen_5dp" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="@dimen/dimen_5dp"
+                android:layout_height="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_12dp"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                android:background="@drawable/icon_search" />
+            <!-- android:layout_alignParentRight="true" -->
+
+            <ImageView
+                android:id="@+id/contact_list_x"
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:padding="@dimen/dimen_2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/contact_list_edt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginLeft="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_3dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_0dp" >
+
+                <ListView
+                    android:id="@+id/contact_list_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/list_alphabel"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0px"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:listSelector="@drawable/tranfer"
+                    android:scrollbarThumbHorizontal="@drawable/tranfer"
+                    android:scrollbarThumbVertical="@drawable/tranfer" >
+                </ListView>
+
+                <com.shopivr.component.view.AlphbelListView
+                    android:id="@+id/list_alphabel"
+                    android:layout_width="@dimen/dimen_10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:divider="@android:color/transparent"
+                    android:listSelector="@drawable/tranfer"
+                    android:scrollbarThumbHorizontal="@drawable/tranfer"
+                    android:scrollbarThumbVertical="@drawable/tranfer" >
+                </com.shopivr.component.view.AlphbelListView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:visibility="visible" >
+
+            <ImageView  android:layout_marginLeft="@dimen/dimen_8dp"
+                android:id="@+id/contact_detail_back"
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/dimen_2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_back" />
+
+            <com.shopivr.component.view.custom.font.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_3dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:gravity="center"
+                android:text="詳細"
+                android:textColor="#212222"
+                android:textSize="@dimen/dimen_7dp"
+                android:textStyle="bold" />
+
+            <ImageView  android:layout_marginRight="@dimen/dimen_8dp"
+                android:id="@+id/contact_detail_x"
+                android:layout_width="@dimen/dimen_12dp"
+                android:layout_height="@dimen/dimen_12dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/dimen_2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_x" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d1d1d1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:text="名前"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp"
+                        android:textStyle="bold" />
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp" />
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:id="@+id/contact_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_0dp"
+                        android:text="山田 太郎"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_7dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:text="フリガナ"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp"
+                        android:textStyle="bold" />
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp" />
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:id="@+id/contact_deail_name_kana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_0dp"
+                        android:text="やまだ たろう"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_7dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d1d1d1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:text="電話番号"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp" />
+
+                    <LinearLayout
+                        android:id="@+id/contact_detail_call_mn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/contact_detail_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_3dp"
+                            android:layout_marginTop="@dimen/dimen_3dp"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_5dp"
+                            android:paddingRight="@dimen/dimen_0dp"
+                            android:text="50002"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/dimen_7dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/contact_detail_control"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center|right" >
+
+                            <ImageView
+                                android:id="@+id/contact_detail__call_1"
+                                android:layout_width="@dimen/dimen_21dp"
+                                android:layout_height="@dimen/dimen_15dp"
+                                android:background="@drawable/a_xml_btn_transfer"
+                                android:src="@drawable/t_3_left_txt" />
+
+                            <ImageView
+                                android:id="@+id/contact_detail__call_2"
+                                android:layout_width="@dimen/dimen_21dp"
+                                android:layout_height="@dimen/dimen_15dp"
+                                android:layout_marginLeft="@dimen/dimen_3dp"
+                                android:layout_marginRight="@dimen/dimen_3dp"
+                                android:background="@drawable/a_xml_btn_transfer"
+                                android:src="@drawable/t_3_right_txt" />
+
+                            <ImageView
+                                android:id="@+id/contact_detail__call"
+                                android:layout_width="@dimen/dimen_9dp"
+                                android:layout_height="@dimen/dimen_9dp"
+                                android:layout_marginRight="@dimen/dimen_3dp"
+                                android:background="@drawable/a_xeml_contact_btn_call" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d1d1d1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:text="コメント"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp"
+                        android:textStyle="bold" />
+
+                    <com.shopivr.component.view.custom.font.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#a9a7a8"
+                        android:textSize="@dimen/dimen_7dp" />
+                </LinearLayout>
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:id="@+id/contact_detail_comment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:gravity="center"
+                    android:text="英語対応可"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_7dp" />
+
+                <com.shopivr.component.view.custom.font.RegularTextView
+                    android:id="@+id/contact_detail_comment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:gravity="center"
+                    android:text="ベトナム語も少し話せます。"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_7dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
